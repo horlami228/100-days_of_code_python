@@ -10,3 +10,5 @@ print(Name)
 
 #Use the input for sentence concatenation
 print("My name is " + Name)
+
+# /n: The backslash N is a new line character that adds a new line
