@@ -53,12 +53,16 @@ while True:
     """
     if user == 0 and computer == 2:
         print("You win")
+        break
     elif user == 2 and computer == 1:
         print("you win")
+        break
     elif user == 1 and computer == 0:
         print("You win")
+        break
     elif user == computer:
         print("It's a draw")
+        break
     else:
         print("You lose")
         break
