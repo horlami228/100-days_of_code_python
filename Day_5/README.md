@@ -1,7 +1,7 @@
 Woriking with loops:
-for loop
-while loop
-do while loop
+for loop, 
+while loop, 
+do while loop, 
 
 A loop is used when we want to repeat a particular line of code as much as we want
 for i in range(1, 0)
