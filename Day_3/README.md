@@ -1,4 +1,4 @@
-Conditioal statement (if and else statement)
+Conditional statement (if and else statement)
 comparison operators(<,<=, >, >=, ==, !=)
 
 An assignment operator (=) is different from a equals to (==) operator
