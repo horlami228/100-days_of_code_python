@@ -1,6 +1,6 @@
 # This program prints out how many days, weeks, and months we have left if we lived up till 90 years
 """We have 365 days in a year
-   We have 52 weeks in a year
+   We have 52 weeks in a year and
    12 months in a year
 """
 # Ask user for current age

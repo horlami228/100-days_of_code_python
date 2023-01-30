@@ -10,6 +10,7 @@ list.append()
 list.extend()
 list.pop()
 list.insert()
+list.shuffle()
 split()
 
 A nested list is a list of list 
