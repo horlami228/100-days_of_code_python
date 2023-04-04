@@ -1,5 +1,6 @@
 #Step 1
 import random
+import os
 
 #Hangman ascii art in a list of 6
 from hangman_ascii import stages
@@ -52,5 +53,4 @@ while not end_of_game:
             print("You lose\n")
             exit(1)
 
-
-    print("{}".format(' '.join(display))) #add dispaly as string
+    print("{}".format(' '.join(display))) #add dispaly as string0
