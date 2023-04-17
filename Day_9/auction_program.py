@@ -17,9 +17,8 @@ while(True): # Bidding ends when there are no other bidders
 
     end_loop = input("Are there any other bidders? Type 'yes' or 'no'\n")
     os.system("clear")
-    if end_loop in ["no", "No"]:
+    if end_loop in ["no", "No", 'n']:
         break
-
 for keys in auction_dic:
     auction_list.append(auction_dic[keys])
 sum = max(auction_list) # get the maximum number in the list
