@@ -72,19 +72,19 @@ def coffe_machine():
     # ask user what they want
     while True:
         user_order = input("What would you like? "
-                           "('expresso'/'latte'/'cappuccino'): ").lower()
+                           "('espresso'/'latte'/'cappuccino'): ").lower()
         if user_order == "report":
             calculate_resources(resources, profit)
         elif user_order == "off":
-            exit("swiching off ________________")
-        elif user_order in ["expresso", "latte", "cappuccino"]:
+            exit("switching off ________________")
+        elif user_order in ["espresso", "latte", "cappuccino"]:
             if resources_sufficient(user_order, resources) == False:
                 coffe_machine()
             elif collect_coins(user_order) == False:
                 coffe_machine()
             recalculate_resources(resources, user_order)
             profit += MENU[user_order]["cost"]
-        elif user_order not in ["expresso", "latte", "cappuccino"]:
+        elif user_order not in ["espresso", "latte", "cappuccino"]:
             print("Invalid option")
 
 
