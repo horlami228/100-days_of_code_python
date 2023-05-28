@@ -7,7 +7,7 @@ class ScoreBoard(Turtle):
         super().__init__()
         self.penup()
         self.hideturtle()
-        self.color("white")
+        self.color("black")
         self.score = 0
         self.x_cor = x_cor
         self.y_cor = y_cor

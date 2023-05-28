@@ -33,19 +33,19 @@ while game_continue:
     if snake.snake_head.distance(food) < 20:
         food.refresh_food()
         snake.extend_snake()
-        score.update_current_score()
+        score.update_score()
 
     """check if snake head hit the wall"""
     if snake.snake_head.xcor() > 298 or snake.snake_head.xcor() < -298 or snake.snake_head.ycor() > 298 \
             or snake.snake_head.ycor() < -298:
-        game_continue = False
-        score.game_over()
+        score.refresh_score()
+        snake.refresh_snake()
 
     """check if snake head hits the body"""
     for body in snake.snake_segment[1:]:
         """check if snake head is equal to its self"""
         if snake.snake_head.distance(body) < 10:
-            game_continue = False
-            score.game_over()
+            score.refresh_score()
+            snake.refresh_snake()
         
 screen.exitonclick()

@@ -5,7 +5,7 @@ class Ball(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("circle")
-        self.color("white")
+        self.color("green")
         self.penup()
         self.y_cor = 10
         self.x_cor = 10

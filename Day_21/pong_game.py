@@ -6,7 +6,7 @@ import time
 from scoreboard import ScoreBoard
 screen = Screen()
 screen.setup(800, 600)
-screen.bgcolor("black")
+screen.bgcolor("white")
 screen.title("Ping Pong")
 
 screen.tracer(0)

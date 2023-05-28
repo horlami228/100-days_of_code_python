@@ -35,6 +35,14 @@ class Snake:
         """This function extends the snake to the given position"""
         self.add_snake(self.snake_segment[-1].position())
 
+    def refresh_snake(self):
+        """This function takes the snake to the beginning"""
+        for snake in self.snake_segment:
+            snake.goto(x=1000, y=1000)
+        self.snake_segment.clear()
+        self.create_new_snake()
+        self.snake_head = self.snake_segment[0]
+
     def move(self):
         """replace each coordinates to follow the head snake"""
         for movement in range(len(self.snake_segment) - 1, 0, -1):
